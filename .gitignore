@@ -55,3 +55,6 @@
 /.settings/*
 
 target
+
+.project
+.classpath
