@@ -1,1 +1,1 @@
-web: java -war target/autoportaria-0.0.1-SNAPSHOT.war
+web: java -jar target/autoportaria-0.0.1-SNAPSHOT.war
