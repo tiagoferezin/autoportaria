@@ -1,1 +1,1 @@
-java $JAVA_OPTS -jar -Dspring.profiles.active=prod target/dependency/webapp-runner.jar --port $PORT target/*.war
+web: java -war target/autoportaria-0.0.1-SNAPSHOT.war
