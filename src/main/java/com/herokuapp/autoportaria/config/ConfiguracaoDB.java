@@ -37,12 +37,12 @@ public class ConfiguracaoDB {
 
 		String herokuPostgreURI = "postgres://nszktokuubyrqe:63a66db736cc616aa143702f4944d121cd397b8b04d4b44b4249ce30e245e654@ec2-54-225-100-12.compute-1.amazonaws.com:5432/d2kpno4fi4rbqf";
 
+		String useTimezone = "?useTimezone=true&serverTimezone=UTC";
 		String userHeroku = "nszktokuubyrqe";
 		String pass = "63a66db736cc616aa143702f4944d121cd397b8b04d4b44b4249ce30e245e654";
-		dataSource.setDriverClass(driverClassPostgreSQL);
+		dataSource.setDriverClass("org.postgresql.Driver");
 		// dataSource.setDriverClass("com.mysql.cj.jdbc.Driver");
-		dataSource.setJdbcUrl("jdbc:" + herokuPostgreURI
-				+ "?useTimezone=true&serverTimezone=UTC");
+		dataSource.setJdbcUrl("jdbc:postgresql://ec2-54-225-100-12.compute-1.amazonaws.com:5432/d2kpno4fi4rbqf");
 		dataSource.setUser(userHeroku);
 		dataSource.setPassword(pass);
 		return dataSource;

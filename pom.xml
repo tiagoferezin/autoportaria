@@ -102,13 +102,13 @@
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
-			<version>42.2.4.jre7</version>
+			<version>42.2.5</version>
 		</dependency>
 
 		<dependency>
 			<groupId>com.mchange</groupId>
 			<artifactId>c3p0</artifactId>
-			<version>0.9.2.1</version>
+			<version>0.9.5.2</version>
 		</dependency>
 
 		<dependency>
