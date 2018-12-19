@@ -13,15 +13,9 @@
 
 <c:set var="path" value="${pageContext.request.contextPath}"
 	scope="request" />
-	<!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<jsp:include page="../head.jsp" />
+	<jsp:include page="../head.jsp" />
 </head>
 <body>
-
-<div class="progress">
-      <div class="indeterminate"></div>
-  </div>
 	</br>
 	<c:if test="${not empty mensagemErro }">
 		<div class="container">
@@ -49,6 +43,5 @@
 
 	<script type="text/javascript" src="${path}/static/js/navbar.js"></script>
 	 <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</body>
+    </body>
 </html>
