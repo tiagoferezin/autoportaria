@@ -77,4 +77,16 @@
     </div>
   </nav>
   <!-- Navbar -->
+  <!-- SideBar -->
+  <div class="sidebar-fixed position-fixed">
+  	<a class="logo-wrapper waves-effect">
+  		<img class="img-fluid" alt src="#"/>
+  	</a>
+  	
+  	<div class="list-group list-group-flush">
+  		<a class="list-group-item active waves-effect" href="#">Home</a>
+  		<a class="list-group-item list-group-item-action waves-effect" href="#">Condominio</a>
+  	</div>
+  </div>
+  <!-- SideBar -->
 </div>
