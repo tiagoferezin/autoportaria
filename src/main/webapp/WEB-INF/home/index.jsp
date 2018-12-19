@@ -38,7 +38,7 @@
 
 	<h1>Olá Mundo!!!</h1>
 
-	<section class="footer bottom-fixed" id="secao-footer"> <jsp:include
+	<section class="footer fixed-bottom" id="secao-footer"> <jsp:include
 		page="../footer.jsp" /> </section>
 
 	<script type="text/javascript" src="${path}/static/js/navbar.js"></script>
