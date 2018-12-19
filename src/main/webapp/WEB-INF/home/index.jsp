@@ -16,6 +16,8 @@
 <jsp:include page="../head.jsp" />
 </head>
 <body>
+
+<div class="loader"></div>
 	</br>
 	<c:if test="${not empty mensagemErro }">
 		<div class="container">
