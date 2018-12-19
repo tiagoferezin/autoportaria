@@ -38,16 +38,26 @@
             </a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkCondominio" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="true">Condomínio</a>
             
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-     		   <a class="dropdown-item" href="#">Moradores</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkCondominio">   
      		   <a class="dropdown-item" href="#">Apartamentos</a>
+     		   <a class="dropdown-item" href="#">Moradores</a>
      		   <a class="dropdown-item" href="#">Veículos</a>
     	    </div>
             
           </li>
+          
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkFinanceiro" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="true">Financeiro</a>
+                  
+            	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkFinanceiro">
+            		<a class="dropdown-item" href="#">Taxa do Condomino</a>
+            		<a class="dropdown-item" href="#">Contas a Pagar</a>
+            	</div>
+           </li>
           
         </ul>
 
