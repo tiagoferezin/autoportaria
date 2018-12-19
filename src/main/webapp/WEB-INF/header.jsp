@@ -39,42 +39,21 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
-                    aria-expanded="true">About MDB</a>
+                    aria-expanded="true">Condomínio</a>
             
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-     		   <a class="dropdown-item" href="#">Link 1</a>
-     		   <a class="dropdown-item" href="#">Link 2</a>
-     		   <a class="dropdown-item" href="#">Link 3</a>
+     		   <a class="dropdown-item" href="#">Moradores</a>
+     		   <a class="dropdown-item" href="#">Apartamentos</a>
+     		   <a class="dropdown-item" href="#">Veículos</a>
     	    </div>
             
           </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/getting-started/" target="_blank">Free download</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Free tutorials</a>
-          </li>
+          
         </ul>
 
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
-          <li class="nav-item">
-            <a href="${path }/app/carrinho/${usuario.idUsuario}" class="nav-link waves-effect">
-              <span class="badge red z-depth-1 mr-1"> ${quantidadeItensCarrinho } </span>
-              <i class="fa fa-shopping-cart"></i>
-              <span class="clearfix d-none d-sm-inline-block"> Carrinho </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://www.facebook.com/ribeiraoreef" class="nav-link waves-effect" target="_blank">
-              <i class="fa fa-facebook"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="https://twitter.com/MDBootstrap" class="nav-link waves-effect" target="_blank">
-              <i class="fa fa-twitter"></i>
-            </a>
-          </li>
+          
           <li class="nav-item">
             <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded waves-effect"
               target="_blank">
