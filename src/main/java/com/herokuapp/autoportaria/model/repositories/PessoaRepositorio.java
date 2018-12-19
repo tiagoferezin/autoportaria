@@ -26,7 +26,7 @@ public interface PessoaRepositorio extends CrudRepository<Pessoa, Long> {
 	public List<Pessoa> retornaPessoaPeloNome(String nome);
 	
 	@Query("SELECT t FROM Pessoa t WHERE t.tipoPessoa = ? AND t.dataDesativacao IS NULL")
-	public List<Pessoa> retornoPessoaPorTipoPessoa(ETipoPessoa tipoPessoa);
+	public List<Pessoa> retornaPessoaPorTipoPessoa(ETipoPessoa tipoPessoa);
 	
 	@Query("SELECT t FROM Pessoa t WHERE t.dataDesativacao IS NULL")
 	public List<Pessoa> retornaTodasPessoasAtivas();

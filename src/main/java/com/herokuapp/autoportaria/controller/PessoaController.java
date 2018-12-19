@@ -30,25 +30,24 @@ public class PessoaController {
 	@Autowired
 	PessoaRepositorio pessoaRepositorio;
 
-	@RequestMapping(value = "/listaPessoas/", method = RequestMethod.GET, headers = "Accept=appliation/json")
-	@ResponseBody
-	public String listaPessoas() {
-		String retorno = "";
-		List<Pessoa> listaRetorno = new ArrayList<Pessoa>();
-		listaRetorno = pessoaRepositorio.retornaTodasPessoasAtivas();
+	@RequestMapping(method = RequestMethod.GET)
+	public String listaPessoa(Model model) {
 		
-		Gson gson = new Gson();
-		
-		retorno = gson.toJson(listaRetorno);
+		List<Pessoa> listaPessoas = new ArrayList<Pessoa>();
+		listaPessoas = pessoaRepositorio.retornaTodasPessoasAtivas();
 
-		return retorno;
+		model.addAttribute("titulo", "Lista de condôminos ativos");
+		model.addAttribute("listaPessoas", listaPessoas);
+		return "pessoa/listaPessoa";
 	}
 	
-	@RequestMapping(value = "/cadastroPessoa/", method = RequestMethod.GET)
-	public String cadastroPessoa(Model model){
-		
-		model.addAttribute("listaTipoPessoa", ETipoPessoa.values());
-		return "";
+	@RequestMapping(value = "/condomino", method = RequestMethod.GET)
+	public String listarCondominos(Model model){
+		List<Pessoa> listaCondominos = new ArrayList<Pessoa>();
+		listaCondominos = pessoaRepositorio.retornaPessoaPorTipoPessoa(ETipoPessoa.CONDOMINO);
+		model.addAttribute("titulo", "Condominos");
+		model.addAttribute("listaCondominos", listaCondominos);
+		return "pessoa/listaCondomino";
 	}
 
 }
