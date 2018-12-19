@@ -13,8 +13,34 @@
 
 <c:set var="path" value="${pageContext.request.contextPath}"
 	scope="request" />
+<jsp:include page="../head.jsp" />
 </head>
 <body>
-<h1>Olá Mundo!!!</h1>
+	</br>
+	<c:if test="${not empty mensagemErro }">
+		<div class="container">
+
+			<div class="alert alert-danger">${mensagemErro }</div>
+
+		</div>
+	</c:if>
+
+	<c:if test="${not empty mensagemInfo }">
+		<div class="container">
+
+			<div class="alert alert-info">${mensagemInfo }</div>
+
+		</div>
+	</c:if>
+
+	<section class="header" id="secao-header"> <jsp:include
+		page="../header.jsp" /> </section>
+
+	<h1>Olá Mundo!!!</h1>
+
+	<section class="footer" id="secao-footer"> <jsp:include
+		page="../footer.jsp" /> </section>
+
+	<script type="text/javascript" src="${path}/static/js/navbar.js"></script>
 </body>
 </html>
