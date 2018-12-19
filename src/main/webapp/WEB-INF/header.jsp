@@ -78,7 +78,7 @@
   </nav>
   <!-- Navbar -->
   <!-- SideBar -->
-  <div class="sidebar-fixed position-fixed">
+  <div class="sidebar-fixed position-fixed fixed-top">
   	<a class="logo-wrapper waves-effect">
   		<img class="img-fluid" alt src="#"/>
   	</a>
