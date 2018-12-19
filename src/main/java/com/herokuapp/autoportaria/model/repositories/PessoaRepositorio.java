@@ -22,7 +22,7 @@ public interface PessoaRepositorio extends CrudRepository<Pessoa, Long> {
 	@Query("SELECT t FROM Pessoa t WHERE t.cpf = ? AND t.dataDesativacao IS NULL")
 	public Pessoa retornaPessoaPeloCPF(String  cpf);
 	
-	@Query("SELECT t FROM Pessoa t WHERE t.nomeCompleto LIKE %?% AND t.dataDesativacao IS NULL")
+	@Query("SELECT t FROM Pessoa t WHERE t.nomeCompleto LIKE '%?%' AND t.dataDesativacao IS NULL")
 	public List<Pessoa> retornaPessoaPeloNome(String nome);
 	
 	@Query("SELECT t FROM Pessoa t WHERE t.tipoPessoa = ? AND t.dataDesativacao IS NULL")
