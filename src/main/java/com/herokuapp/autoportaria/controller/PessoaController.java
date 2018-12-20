@@ -4,6 +4,7 @@
 package com.herokuapp.autoportaria.controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -65,10 +66,11 @@ public class PessoaController {
 		PessoaFactory pf = new PessoaFactory();
 		String nomeCompleto = pf.gerarNomeCompleto(pessoa);
 		pessoa.setNomeCompleto(nomeCompleto);
-		
-		if(bindingResult.hasErrors()){
+		pessoa.setDataCriacao(Calendar.getInstance());
+
+		if (bindingResult.hasErrors()) {
 			throw new PessoaException();
-		}else{
+		} else {
 			pessoaRepositorio.save(pessoa);
 		}
 		List<Pessoa> listaPessoas = new ArrayList<Pessoa>();
@@ -78,17 +80,17 @@ public class PessoaController {
 		model.addAttribute("listaTiposPessoa", ETipoPessoa.values());
 		return "pessoa/listaPessoa";
 	}
-	
-	@RequestMapping(method = RequestMethod.GET, value="{idPessoa}")
+
+	@RequestMapping(method = RequestMethod.GET, value = "{idPessoa}")
 	@ResponseBody
-	public Pessoa buscarPessoa(@PathVariable Long idPessoa){
+	public Pessoa buscarPessoa(@PathVariable Long idPessoa) {
 		Pessoa pessoa = new Pessoa();
 		pessoa = pessoaRepositorio.findOne(idPessoa);
 		return pessoa;
 	}
-	
-	@RequestMapping(method = RequestMethod.DELETE, value="{idPessoa}")
-	public ResponseEntity<String> deletarPessoa(@PathVariable Long idPessoa){
+
+	@RequestMapping(method = RequestMethod.DELETE, value = "{idPessoa}")
+	public ResponseEntity<String> deletarPessoa(@PathVariable Long idPessoa) {
 		try {
 			pessoaRepositorio.delete(idPessoa);
 			return new ResponseEntity<String>(HttpStatus.OK);
