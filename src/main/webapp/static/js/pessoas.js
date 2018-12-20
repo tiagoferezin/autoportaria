@@ -25,6 +25,7 @@ var aplicarListaners = function() {
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
 	});
+	$('.dataTables_length').addClass('bs-select');
 
 	$('#modalAlterar').on('hide.bs.modal', limparModalEditar);
 
