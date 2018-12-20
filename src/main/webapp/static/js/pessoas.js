@@ -21,6 +21,8 @@ var aplicarListaners = function() {
 	
 	$('#tabela-pessoas').DataTable({
 		dom: 'Bfrtip',
+		paging: false,
+	    searching: false,
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
