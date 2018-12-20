@@ -14,6 +14,8 @@
 
 <c:set var="path" value="${pageContext.request.contextPath}"
 	scope="request" />
+	
+	<jsp:include page="../head.jsp" />
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet"
@@ -46,6 +48,10 @@
 		</div>
 	</c:if>
 
+	<section class="header" id="secao-header"> <jsp:include
+		page="../header.jsp" /> </section>
+		
+		
 	<main class="pt-5 mx-lg-5">
 	<div class="container-fluid mt-5">
 
@@ -82,6 +88,10 @@
 	</div>
 	</main>
 
+	<section class="footer fixed-bottom" id="secao-footer"> <jsp:include
+		page="../footer.jsp" /> </section>
+
+	<script type="text/javascript" src="${path}/static/js/navbar.js"></script>
 <!-- jQuery library -->
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
