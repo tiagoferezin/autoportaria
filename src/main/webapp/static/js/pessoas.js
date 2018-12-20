@@ -23,7 +23,8 @@ var aplicarListaners = function() {
 		dom: 'Bfrtip',
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
-        ]
+        ],
+        destroy: true
 	});
 	
 	$('#modalAlterar').on('hide.bs.modal', limparModalEditar);
