@@ -21,14 +21,11 @@ var aplicarListaners = function() {
 	
 	$('#tabela-pessoas').DataTable({
 		dom: 'Bfrtip',
-		paging: false,
-	    searching: false,
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ]
 	});
-	$('.dataTables_length').addClass('bs-select');
-
+	
 	$('#modalAlterar').on('hide.bs.modal', limparModalEditar);
 
 	$('.btn-editar').click(function() {
