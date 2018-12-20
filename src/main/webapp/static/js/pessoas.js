@@ -27,6 +27,10 @@ var aplicarListaners = function() {
         destroy: true
 	});
 	
+	$('.cpf').mask('999.999.999-99', {
+		reverse : true
+	});
+	
 	$('#modalAlterar').on('hide.bs.modal', limparModalEditar);
 
 	$('.btn-editar').click(function() {
