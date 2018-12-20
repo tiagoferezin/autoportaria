@@ -36,7 +36,7 @@ public class PessoaController {
 		List<Pessoa> listaPessoas = new ArrayList<Pessoa>();
 		listaPessoas = pessoaRepositorio.retornaTodasPessoasAtivas();
 		
-		model.addAttribute("titulo", "Lista de condôminos ativos");
+		model.addAttribute("titulo", "Lista de cond&ocirc;minos ativos");
 		model.addAttribute("listaPessoas", listaPessoas);
 		model.addAttribute("listaTiposPessoa", ETipoPessoa.values());
 		return "pessoa/listaPessoa";
