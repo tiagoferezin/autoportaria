@@ -24,7 +24,10 @@ var aplicarListaners = function() {
         buttons: [
             'copy', 'csv', 'excel', 'pdf', 'print'
         ],
-        destroy: true
+        destroy: true,
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Portuguese-Brasil.json"
+        }
 	});
 	
 	$('.cpf').mask('999.999.999-99', {
