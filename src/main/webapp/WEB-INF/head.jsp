@@ -21,6 +21,8 @@
   <link href="${path}/static/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="${path}/static/css/mdb.min.css" rel="stylesheet">
+  <!-- Datatables core css -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/jq-3.3.1/dt-1.10.18/b-1.5.4/b-colvis-1.5.4/b-flash-1.5.4/b-html5-1.5.4/cr-1.5.0/r-2.2.2/sc-1.5.0/datatables.min.css"/>
   <!-- Your custom styles (optional) -->
   <link href="${path}/static/css/style.min.css" rel="stylesheet">
 
