@@ -43,7 +43,7 @@
             
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkCondominio">   
      		   <a class="dropdown-item" href="#">Apartamentos</a>
-     		   <a class="dropdown-item" href="#">Moradores</a>
+     		   <a class="dropdown-item" href="${path }/pessoa">Moradores</a>
      		   <a class="dropdown-item" href="#">Veículos</a>
     	    </div>
             
